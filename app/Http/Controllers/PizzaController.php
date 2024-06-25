@@ -12,6 +12,7 @@ class PizzaController extends Controller
     {
         $pizzas = Pizza::all();
 
+
         return Inertia::render('Pizzas/All', [
             'pizzas' => $pizzas
         ]);
